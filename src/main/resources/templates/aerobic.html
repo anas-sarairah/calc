@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Logo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/bmi">Home</a></li>
+                <li><a href="/normal">Normal Weight Matrix</a></li>
+                <li><a href="/aerobic">Aerobic</a></li>
+                <li><a href="/keto">ketogenic Diet</a></li>
+            </ul>
+            <!--   <ul class="nav navbar-nav navbar-right">
+                   <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+               </ul> -->
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid text-center">
+    <div class="row content">
+
+        <br>
+        <div class="col-sm-8 text-left">
+
+            <div class="container">
+                <h1>Aerobic videos</h1>
+                <p>Follow Each Week As Per below</p>
+                <p class="text-muted">Enjoy !!</a>.</p>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <!-- 16:9 -->
+                        <h4>Week One</h4>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/TJLKgWsS7vw"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <!-- 4:3 -->
+                        <h4>Week Two</h4>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/njeZ29umqVE"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <!-- 16:9 -->
+                        <h4>Week Three</h4>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/m9yI2LGZRE0"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <!-- 4:3 -->
+                        <h4>Week Four</h4>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/m9yI2LGZRE0"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <!-- 16:9 -->
+                        <h4>Week Five</h4>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/SSYX8sIOmM"></iframe>
+                        </div>-
+                    </div>
+                    <div class="col-sm-6">
+                        <!-- 4:3 -->
+                        <h4>Week Six</h4>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/SSYX8sIOmM"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <!-- 16:9 -->
+                        <h4>Week Seven</h4>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/cvEJ5WFk2KE"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <!-- 4:3 -->
+                        <h4>Week Eight</h4>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/l5uilZNoaAU"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <!-- 16:9 -->
+                        <h4>Week Nine</h4>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/l5uilZNoaAU"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <!-- 4:3 -->
+                        <h4>Week Ten</h4>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/wuDp6v_oL34"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <!-- 16:9 -->
+                        <h4>Week Eleven</h4>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/wuDp6v_oL34"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <!-- 4:3 -->
+                        <h4>Week Twelve</h4>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/6Z99XgLamg4"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<footer class="container-fluid text-center">
+    <address>
+        <strong>Jordan, Karak.</strong><br>
+        Mu'tah University<br>
+        Sports Faculity<br>
+        <abbr title="Phone">Phone:</abbr> (00962) 03-2372380
+    </address>
+
+    <address>
+        <strong>Rand Alsarairah</strong><br>
+        <a href="mailto:#">rand.alsarairah@gmail.com</a>
+    </address>
+</footer>
+
+</body>
+</html>
